@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="34px" viewBox="0 0 36 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Website" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Artboard" stroke="#FFFFFF" stroke-width="2">
+            <g id="plane" transform="translate(6.000000, 2.000000)">
+                <polygon id="Path-3" points="0 0 6.86842105 15 29 15"></polygon>
+                <polygon id="Path-3-Copy" transform="translate(14.500000, 22.500000) scale(1, -1) translate(-14.500000, -22.500000) " points="0 15 6.86842105 30 29 30"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>
