@@ -217,22 +217,30 @@
 --------------------------------
 ------------------------------->
 	<section id="contact">
-		<h1>Contact</h1>
-			<form id="contact-form" method="post" action="send_form_email.php">
-				<div class="fields-left">
-				<input type="text" id="name" name="name" placeholder="Name" required>
-				<input type="text" id="subject" name="subject" placeholder="Subject" required>
-				<input type="email" id="email" name="email" placeholder="Your Email" required>
-				</div>
-				
-				<div class="fields-right">
-				<textarea type="text" id="message" name="message" placeholder="Message" required></textarea>
-				<button type="submit" class="button sent" id="send">
-					<img src="img/contact/plane.svg" id="plane" alt="send email">
-					<img src="img/contact/check.svg" id="check" alt="email sent">
-				</button>
-				</div>
-			</form>
+		<div class="left">
+			<h1>Contact</h1>
+			<p>Get in touch with us if you're interested in:
+				<ul>
+					<li>Bookings</li>
+					<li>Collaborating</li>
+					<li>General inquiries</li>
+					<li>Saying hey</li>
+				</ul>
+			</p>
+		</div>
+		
+		<div class="right">
+			<div class="pulse a"></div>
+			<div class="pulse b"></div>
+			<div class="pulse c"></div>
+			<div class="pulse d"></div>
+			
+			<a href="mailto:mgmt@mezmomusic.com?subject=Hey this is an email">
+			<div class="button"><h3>Email Us</h3></div>
+			</a>
+		</div>
+	
+		<span id="footer">&copy; MEZMO 2018</span>
 	</section>
 
 <!------------------------------
@@ -242,9 +250,6 @@
 
 --------------------------------
 ------------------------------->
-	<section id="footer">
-		&copy; MEZMO 2018
-	</section>
 </div>
 </body>
 </html>
