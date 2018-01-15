@@ -6,15 +6,17 @@ body {
   letter-spacing: 1px; }
 
 h1 {
-  font: 400 60px/66px 'Montserrat', sans-serif;
-  margin: 20px 0; }
+  font: 400 70px/76px 'Oswald', sans-serif;
+  margin: 20px 0;
+  letter-spacing: 3px; }
 
 h2 {
-  font: 400 24px/30px 'Montserrat', sans-serif; }
+  font: 400 24px/30px 'Oswald', sans-serif;
+  letter-spacing: 3px; }
 
 h3 {
-  font: 400 14px/20px 'Montserrat', sans-serif;
-  letter-spacing: 2px; }
+  font: 400 14px/20px 'Oswald', sans-serif;
+  letter-spacing: 3px; }
 
 .button {
   padding: 15px 40px;
@@ -101,7 +103,7 @@ a {
   @media (min-width: 768px) {
     .nav-wrapper {
       height: 100vh;
-      width: 200px;
+      width: 150px;
       left: 0;
       right: auto; } }
 
@@ -138,7 +140,7 @@ a {
     .nav {
       opacity: 1;
       visibility: visible;
-      width: 200px;
+      width: 150px;
       transform: scale(1); } }
   .nav .nav-link {
     display: flex;
@@ -198,7 +200,7 @@ a {
     transition: all .1s ease-in-out; }
     @media (min-width: 768px) {
       .social-container .social-link {
-        width: 49.5%; } }
+        width: 49.3%; } }
 
 .disabled:hover {
   cursor: not-allowed;
@@ -217,8 +219,8 @@ a {
 
 @media (min-width: 768px) {
   .container {
-    width: calc(100% - 200px);
-    padding-left: 200px; } }
+    width: calc(100% - 150px);
+    padding-left: 150px; } }
 section {
   position: relative;
   padding: 40px; }
