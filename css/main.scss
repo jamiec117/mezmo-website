@@ -14,15 +14,19 @@ body {
 	margin: 0;
 	font: $roboto-mono;
 	color: white;
-	background: $nav-gray;
+	background: $dark-gray;
 	
 	letter-spacing: 1px;
 }
 
 h1 {
-	font: 400 60px/66px 'Oswald', sans-serif;
+	font: 400 40px/66px 'Oswald', sans-serif;
 	margin: 20px 0;
 	letter-spacing: 3px;
+	
+	@media (min-width: 768px){
+		font-size: 60px;
+	}
 }
 h2 {
 	font: 400 24px/30px 'Oswald', sans-serif;
@@ -93,15 +97,18 @@ a {
 	width: 70px;
 	
 	position: fixed;
-	top: 20px;
 	right: 20px;
 	background: $nav-gray;
 	z-index: 69;
 	
-	box-shadow: 0 0 14px 0 $dark-gray;
 	border-radius: 50% 50%;
 	transition: all .3s ease;
 	transition-delay: .3s;
+	
+	@media (max-width: 768px){
+		box-shadow: 0 0 11px 0 rgba(0,0,0,.5);
+		top: 20px;
+	}
 	
 	.bar {
 		height: 2px;
@@ -275,11 +282,6 @@ a {
 		}
 	}
 
-.disabled:hover {
-		cursor: not-allowed;
-		transform: scale(1) !important;
-		&::after {display: none;}
-	}
 .nav-open {
 	opacity: 1;
 	visibility: visible;
@@ -302,6 +304,20 @@ section {
 	
 	@media (min-width: 1024px){padding: 100px;}
 	@media (min-width: 2000px){padding: 100px 300px;}
+}
+
+.no-padding {
+	background: $dark-gray;
+	padding: 0 1px;
+	@media (min-width: 768px){
+		padding: 1px 100px;
+	}
+}
+
+p {
+	line-height: 28px;
+	color: $light-gray;
+	@media (min-width: 1024px){width: 50%;}
 }
 
 /*******************************
@@ -395,25 +411,26 @@ background-image: linear-gradient(rgba(128,146,166,0.00) 0%, #8092A6 100%);
 
 ********************************
 *******************************/
-#shows {
+#shows, #livestream {
 	background: $dark-gray;
+	padding-bottom: 5px;
+}
+.video-wrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
 	
-	.video-wrapper {
-		position: relative;
-		padding-bottom: 56.25%; /* 16:9 */
-		padding-top: 25px;
-		height: 0;
-		margin: 30px 0 50px 0;
+	@media (min-width: 768px){
 		border: 2px solid $nav-gray;
-		border-radius: 10px;
-		
-		iframe {position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			border-radius: 10px;
-		}
+		margin: 30px 0 50px 0;
+	}
+	
+	iframe {position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
 	}
 }
 
@@ -500,6 +517,19 @@ background: linear-gradient(134deg, #256D98 10%, #BA3C64 52%, #332340 100%);
 	}
 }
 
+#youtube {
+	@media (min-width: 768px){padding-bottom: 100px;}
+}
+
+/*******************************
+********************************
+
+		   Livestream
+
+********************************
+*******************************/
+
+
 /*******************************
 ********************************
 
@@ -516,6 +546,7 @@ background: linear-gradient(134deg, #256D98 10%, #BA3C64 52%, #332340 100%);
 	
 	li {
 		margin: 20px 0;
+		color: $light-gray;
 	}
 	
 	.left {

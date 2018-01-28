@@ -29,6 +29,14 @@
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script><!-- Jquery Library -->
 	<script src="js/main.js"></script><!--Main js -->
 	<script src="js/form-ajax.js"></script><!--Form js -->
+	
+	<!-- AOS -->
+	<link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+	<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+
+	<!-- Animsition -->
+	<script src="js/animsition.min.js"></script>
+	<link href="css/animsition.min.css" rel="stylesheet">
   	
    	<title>MEZMO</title>
  </head>
@@ -62,7 +70,7 @@
  	<a href="#music" class="nav-link">
 	<h3>Music</h3>
 	</a>
-	<a href="https://www.twitch.tv/mezmomusic" target="_blank" class="nav-link">
+	<a href="#livestream" target="_blank" class="nav-link">
 	<h3>Livestream</h3>
 	</a>
 	 
@@ -71,19 +79,19 @@
 	</a>
 
  	<div class="social-container">
+		<!-- Spotify -->
+		<a href="https://open.spotify.com/artist/2VGVr0WkRm0wCkMI2vKJWF" target="_blank" class="social-link">
+			<svg height="22px" viewBox="0 0 19 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="1">
+        <path d="M9.25316121,0.277 C4.28261495,0.277 0.253,4.30650747 0.253,9.27705374 C0.253,14.2478149 4.28261495,18.277 9.25316121,18.277 C14.2242448,18.277 18.2534299,14.2478149 18.2534299,9.27705374 C18.2534299,4.30682989 14.2242448,0.277429894 9.25305374,0.277429894 L9.25316121,0.277 Z M13.3805771,13.2576607 C13.2193667,13.5220458 12.8733018,13.6058752 12.6089167,13.44359 C10.4957709,12.1528322 7.8355845,11.860504 4.70272923,12.5762781 C4.4008359,12.6450612 4.09990984,12.4559077 4.03112674,12.1539069 C3.96202121,11.8519061 4.15042242,11.55098 4.45306807,11.4821969 C7.88147573,10.698607 10.8222757,11.0361815 13.1946478,12.4860003 C13.4590329,12.6482854 13.5428623,12.9932757 13.3805771,13.2576607 Z M14.4821815,10.8067254 C14.2790564,11.1372067 13.8470125,11.2414561 13.5170686,11.038331 C11.097838,9.55100393 7.41009654,9.12035724 4.54861209,9.98895883 C4.17750577,10.1010538 3.78554957,9.89191017 3.67291725,9.52144869 C3.56114471,9.15034237 3.7703958,8.75913849 4.14085728,8.64629121 C7.4094517,7.65452488 11.4729208,8.13493185 14.2511132,9.8421499 C14.5810572,10.045275 14.6853066,10.4773188 14.4821815,10.8068329 L14.4821815,10.8067254 Z M14.5767582,8.25487238 C11.6760459,6.53196319 6.89024677,6.37354711 4.12075971,7.21409809 C3.67603398,7.34897745 3.20572953,7.09791914 3.07095764,6.6531934 C2.93618576,6.20825272 3.18702913,5.7382707 3.63207728,5.60306891 C6.81125367,4.63795604 12.0962677,4.82442272 15.4359021,6.80698812 C15.8367787,7.04439729 15.9678964,7.56102286 15.7303798,7.96050221 C15.4939379,8.36051892 14.9759152,8.49238902 14.5771881,8.25487238 L14.5767582,8.25487238 Z" id="Shape" fill="#FFFFFF" fill-rule="nonzero"></path>
+    </g>
+</svg>
+		</a>
+		
 		<!-- Soundcloud -->
 		<a href="https://soundcloud.com/mezmomusic" target="_blank" class="social-link">
 			<svg height="12px" viewBox="0 0 188 84" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <path d="M3.375,43.578 C2.962,43.578 2.623,43.91 2.571,44.368 L0.668,61.71 L2.571,78.669 C2.623,79.119 2.962,79.451 3.375,79.451 C3.781,79.451 4.113,79.127 4.179,78.669 L6.333,61.71 L4.179,44.36 C4.112,43.903 3.78,43.578 3.375,43.578 Z M18.607,39.455 C18.009,39.455 17.523,39.934 17.478,40.569 L15.774,61.711 L17.478,82.167 C17.522,82.801 18.009,83.279 18.607,83.279 C19.205,83.279 19.691,82.8 19.743,82.167 L21.677,61.711 L19.743,40.562 C19.692,39.934 19.205,39.455 18.607,39.455 Z M34.099,28.36 C33.317,28.36 32.675,28.994 32.638,29.813 L31.126,61.725 L32.638,82.342 C32.675,83.147 33.317,83.788 34.099,83.788 C34.866,83.788 35.508,83.144 35.559,82.334 L35.559,82.342 L37.263,61.725 L35.559,29.806 C35.507,28.995 34.866,28.36 34.099,28.36 Z M49.833,17.465 C48.859,17.465 48.07,18.247 48.041,19.25 L46.72,61.732 L48.041,82.009 C48.07,82.997 48.86,83.78 49.833,83.78 C50.792,83.78 51.581,82.998 51.618,82.003 L51.618,82.019 L53.1,61.732 L51.618,19.25 C51.581,18.247 50.792,17.465 49.833,17.465 Z M59.747,81.878 L59.747,81.893 L59.747,81.878 Z M65.811,16.83 C64.653,16.83 63.716,17.76 63.694,18.94 L62.572,61.732 L63.694,81.701 C63.716,82.874 64.653,83.805 65.811,83.805 C66.969,83.805 67.899,82.874 67.936,81.688 L67.936,81.709 L69.19,61.733 L67.936,18.941 C67.898,17.76 66.969,16.83 65.811,16.83 Z M83.397,10.648 C82.9972449,10.3809093 82.5277664,10.2372837 82.047,10.235 C81.56,10.235 81.103,10.382 80.719,10.633 C80.0279424,11.0844999 79.6072138,11.8505859 79.597,12.676 L79.582,13.141 L78.667,61.73 C78.667,61.759 79.596,81.449 79.596,81.449 L79.596,81.529 C79.626,82.084 79.832,82.591 80.172,82.99 C80.6315717,83.55334 81.3189877,83.8816417 82.046,83.885 C82.71,83.885 83.315,83.604 83.757,83.161 C84.199,82.718 84.48,82.113 84.495,81.441 L84.598,79.486 L85.528,61.738 L84.495,12.676 C84.4792637,11.8620106 84.0700129,11.1061266 83.397,10.648 Z M84.496,81.45 L84.496,81.441 L84.496,81.45 L84.496,81.436 L84.496,81.441 L84.496,81.45 Z M163.428,36.416 C160.174,36.416 157.069,37.072 154.237,38.26 C152.348,16.853 134.393,0.063 112.5,0.063 C107.301656,0.068903465 102.148567,1.02915467 97.297,2.896 C95.504,3.589 95.032,4.305 95.011,5.692 L95.011,81.089 C95.032,82.542 96.159,83.671 97.577,83.811 C97.636,83.819 163.429,83.811 163.429,83.811 C176.552,83.811 187.183,73.299 187.183,60.176 C187.182,47.053 176.551,36.416 163.428,36.416 Z" id="nav-soundcloud" fill="#FFFFFF" fill-rule="nonzero"></path>
-</svg>
-		</a>
-		
-		<!-- Spotify -->
-		<a class="social-link disabled">
-			<svg height="22px" viewBox="0 0 19 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.15">
-        <path d="M9.25316121,0.277 C4.28261495,0.277 0.253,4.30650747 0.253,9.27705374 C0.253,14.2478149 4.28261495,18.277 9.25316121,18.277 C14.2242448,18.277 18.2534299,14.2478149 18.2534299,9.27705374 C18.2534299,4.30682989 14.2242448,0.277429894 9.25305374,0.277429894 L9.25316121,0.277 Z M13.3805771,13.2576607 C13.2193667,13.5220458 12.8733018,13.6058752 12.6089167,13.44359 C10.4957709,12.1528322 7.8355845,11.860504 4.70272923,12.5762781 C4.4008359,12.6450612 4.09990984,12.4559077 4.03112674,12.1539069 C3.96202121,11.8519061 4.15042242,11.55098 4.45306807,11.4821969 C7.88147573,10.698607 10.8222757,11.0361815 13.1946478,12.4860003 C13.4590329,12.6482854 13.5428623,12.9932757 13.3805771,13.2576607 Z M14.4821815,10.8067254 C14.2790564,11.1372067 13.8470125,11.2414561 13.5170686,11.038331 C11.097838,9.55100393 7.41009654,9.12035724 4.54861209,9.98895883 C4.17750577,10.1010538 3.78554957,9.89191017 3.67291725,9.52144869 C3.56114471,9.15034237 3.7703958,8.75913849 4.14085728,8.64629121 C7.4094517,7.65452488 11.4729208,8.13493185 14.2511132,9.8421499 C14.5810572,10.045275 14.6853066,10.4773188 14.4821815,10.8068329 L14.4821815,10.8067254 Z M14.5767582,8.25487238 C11.6760459,6.53196319 6.89024677,6.37354711 4.12075971,7.21409809 C3.67603398,7.34897745 3.20572953,7.09791914 3.07095764,6.6531934 C2.93618576,6.20825272 3.18702913,5.7382707 3.63207728,5.60306891 C6.81125367,4.63795604 12.0962677,4.82442272 15.4359021,6.80698812 C15.8367787,7.04439729 15.9678964,7.56102286 15.7303798,7.96050221 C15.4939379,8.36051892 14.9759152,8.49238902 14.5771881,8.25487238 L14.5767582,8.25487238 Z" id="Shape" fill="#FFFFFF" fill-rule="nonzero"></path>
-    </g>
 </svg>
 		</a>
 		
@@ -122,6 +130,9 @@
  	</div>
 </div>
 	 </div>
+
+<!-- Animsition -->
+<div class="animsition">
 <!------------------------------
 --------------------------------
 
@@ -131,7 +142,7 @@
 ------------------------------->
 <div class="container">
 	<section id="hero">
-		<div class="cta">
+		<div class="cta" data-aos="fade-right" data-aos-delay="1000" data-aos-duration="800">
 			<span id="hero-subheading">Humans - 'Sip It' Redo</span>
 			<h1>OUT NOW</h1>
 			<a href="http://smarturl.it/sip-it-mezmo" target="_blank">	
@@ -156,9 +167,12 @@
 --------------------------------
 ------------------------------->
 	<section id="shows">
-		<h1>Shows</h1>
-		We're working on getting gigs right now and have been practicing a lot on our <a href="https://www.twitch.tv/mezmomusic" target="_blank">Twitch</a> / <a href="https://www.youtube.com/channel/UC268wT33pGmZxcaSDKEXQmg" target="_blank">YouTube</a>.
-		<div class="video-wrapper">
+		<h1 data-aos="fade-right" data-aos-duration="800">SHOWS</h1>
+			<p data-aos="fade-right" data-aos-delay="200" data-aos-duration="800">We're working on getting gigs right now and have been practicing a lot on our <a href="https://www.twitch.tv/mezmomusic" target="_blank">Twitch</a> / <a href="https://www.youtube.com/channel/UC268wT33pGmZxcaSDKEXQmg" target="_blank">YouTube</a>.</p>
+	</section>
+	
+	<section class="no-padding" id="youtube">
+		<div class="video-wrapper" data-aos="fade-up" data-aos-delay="400" data-aos-duration="800">
 			<iframe src="https://www.youtube.com/embed/9OfmorBw9C0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 		</div>
 	</section>
@@ -171,9 +185,18 @@
 --------------------------------
 ------------------------------->
 	<section id="music">
-		<h1>Music</h1>
+		<h1 data-aos="fade-right" data-aos-duration="800">MUSIC</h1>
 		<div class="music-wrapper">
-			<a href="https://soundcloud.com/mezmomusic" target="_blank">
+			<a href="https://open.spotify.com/artist/2VGVr0WkRm0wCkMI2vKJWF" target="_blank" data-aos="fade-up" data-aos-duration="800">
+			<div class="music-link">
+				<div>
+					<img src="img/music/spotify.svg" alt="spotify" class="disabled">
+					<h2>Spotify</h2>
+				</div>
+			</div>
+			</a>
+			
+			<a href="https://soundcloud.com/mezmomusic" target="_blank" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
 				<div class="music-link">
 					<div>
 					<img src="img/music/souncloud.svg" alt="spotify">
@@ -182,14 +205,7 @@
 				</div>
 			</a>
 			
-			<div class="music-link disabled">
-				<div>
-					<img src="img/music/spotify.svg" alt="spotify" class="disabled">
-					<h2>Coming Soon</h2>
-				</div>
-			</div>
-			
-			<a href="https://www.youtube.com/channel/UC268wT33pGmZxcaSDKEXQmg" target="_blank">
+			<a href="https://www.youtube.com/channel/UC268wT33pGmZxcaSDKEXQmg" target="_blank" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
 				<div class="music-link">	
 					<div>
 					<img src="img/music/youtube.svg" alt="youtube">
@@ -198,7 +214,7 @@
 				</div>
 			</a>
 			
-			<a href="https://mezmo.bandcamp.com/" target="_blank">
+			<a href="https://mezmo.bandcamp.com/" target="_blank" data-aos="fade-up" data-aos-delay="300" data-aos-duration="800">
 				<div class="music-link">
 					<div>
 					<img src="img/music/bandcamp.svg" alt="spotify">
@@ -212,15 +228,33 @@
 <!------------------------------
 --------------------------------
 
+		    Livestream
+
+--------------------------------
+------------------------------->
+	<section id="livestream">
+		<h1 data-aos="fade-right" data-aos-duration="800">LIVESTREAM</h1>
+			<p data-aos="fade-right" data-aos-delay="200" data-aos-duration="800">Chune into our livestream for live performances, practices, music making, gaming and VR stuff.</p>
+	</section>
+	<section class="no-padding">
+		<div class="video-wrapper" data-aos="fade-up" data-aos-delay="400" data-aos-duration="800">
+			<iframe src="https://player.twitch.tv/?channel=mezmomusic" frameborder="0" allowfullscreen="true" scrolling="no"></iframe>
+		</div>
+	</section>
+
+
+<!------------------------------
+--------------------------------
+
 			Contact
 
 --------------------------------
 ------------------------------->
 	<section id="contact">
 		<div class="left">
-			<h1>Contact</h1>
-			<p>Get in touch with us if you're interested in:
-				<ul>
+			<h1 data-aos="fade-right" data-aos-duration="800">CONTACT</h1>
+			<p data-aos="fade-right" data-aos-delay="200" data-aos-duration="800">Get in touch with us if you're interested in:
+				<ul data-aos="fade-right" data-aos-delay="200" data-aos-duration="800">
 					<li>Bookings</li>
 					<li>Collaborating</li>
 					<li>General inquiries</li>
@@ -229,7 +263,7 @@
 			</p>
 		</div>
 		
-		<div class="right">
+		<div class="right" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
 			<div class="pulse a"></div>
 			<div class="pulse b"></div>
 			<div class="pulse c"></div>
@@ -251,5 +285,6 @@
 --------------------------------
 ------------------------------->
 </div>
+</div><!-- close Animsition -->
 </body>
 </html>
