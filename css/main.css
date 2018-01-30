@@ -79,7 +79,7 @@ a {
   transition-delay: .3s; }
   @media (max-width: 768px) {
     .nav-wrapper {
-      box-shadow: 0 0 11px 0 rgba(0, 0, 0, 0.5);
+      box-shadow: 0 3px 11px 0 rgba(0, 0, 0, 0.3);
       top: 20px; } }
   .nav-wrapper .bar {
     height: 2px;
