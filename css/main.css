@@ -90,7 +90,7 @@ a {
     bottom: 0;
     left: 0;
     margin: auto;
-    background: #8092A6;
+    background: #ffffff;
     border-radius: 10px;
     transition: all .3s ease; }
     .nav-wrapper .bar.top {
@@ -259,8 +259,9 @@ p {
   height: 100vh;
   padding: 0;
   position: relative;
-  background: url(../img/hero/sip-it.jpg);
-  background-size: cover; }
+  background: url(../img/hero/petit.jpg);
+  background-size: cover;
+  background-position: center; }
   #hero .cta {
     padding: 0 40px; }
   #hero #hero-subheading {
