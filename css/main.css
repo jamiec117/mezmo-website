@@ -258,7 +258,7 @@ p {
   height: 100vh;
   padding: 0;
   position: relative;
-  background: url(../img/hero/petit.jpg);
+  background: url(../img/hero/hero.jpg);
   background-size: cover;
   background-position: center; }
   #hero .cta {
