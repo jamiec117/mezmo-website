@@ -258,9 +258,9 @@ p {
   height: 100vh;
   padding: 0;
   position: relative;
-  background: url(../img/hero/hero.jpg);
+  background: url(../img/hero/hero.png);
   background-size: cover;
-  background-position: center; }
+  background-position: left; }
   #hero .cta {
     padding: 0 40px; }
   #hero #hero-subheading {
